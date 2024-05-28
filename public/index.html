@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card Form</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="img-text">
+      <img class="nc-img" src="nc.png" alt="">
+      <p class="pay-text">Pay Your NACOS Dues Here!!</p>
+    </div>
+    <div class="wrapper">
+      <div class="credit-card" id="card">
+        <div class="card-front">
+          <div class="branding">
+            <img src="chip.png" class="chip-img" />
+            <img src="visa.png" class="visa-logo" />
+          </div>
+          <div class="card-number">
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+          </div>
+          <div class="details">
+            <div>
+              <span>Card Holder</span>
+              <span id="card-holder-name">Your Name Here</span>
+            </div>
+            <div>
+              <span>Expires</span>
+              <span id="validity">06/28</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <div class="black-strip"></div>
+          <div class="white-strip">
+            <span>CVV</span>
+            <div id="cvv-display"></div>
+          </div>
+          <img src="visa.png" class="visa-logo" />
+        </div>
+      </div>
+      <form>
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number" placeholder="1234123412341234" />
+
+        <label for="card-holder">Card Holder:</label>
+        <input type="text" id="card-name-input" placeholder="Your Name" />
+
+        <div class="date-cvv">
+          <div>
+            <label for="validity">Expires On:</label>
+            <input type="date" id="validity-input" />
+          </div>
+          <div>
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" placeholder="***" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="all">
+      <fieldset>
+        <legend>Choose a Payment Method: </legend>
+        <div>
+          <input type="radio" id="vanilla" name="flavor" value="vanilla" checked>
+          <label for="vanilla">Pay With Card <i class="fa fa-cc-visa " style="color:rgb(87, 87, 219);"></i></label>
+        </div>
+        
+        <div>
+          <input type="radio" id="chocolate" name="flavor" value="chocolate">
+          <label for="chocolate">Bank Transfer</label>
+        </div>
+
+      </fieldset>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
