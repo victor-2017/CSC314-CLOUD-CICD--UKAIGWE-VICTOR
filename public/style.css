@@ -32,7 +32,7 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  background-color: #ffffff;
+  background-color: hwb(228 1% 88%);
   width: 500px;
   padding: 3em;
   border-radius: 1em;
